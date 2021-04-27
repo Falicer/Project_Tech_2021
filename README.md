@@ -17,7 +17,7 @@ Packages planned to be used for the project.
 * express-handlebars
 
 ## Extensions (optional to use, I would recommend it!)
-[Extensions Wiki page](https://github.com/Falicer/Blok_Tech/wiki/Extensions)
+[Extensions Wiki page](https://github.com/Falicer/Project_Tech_2021/wiki/Extensions)
 
 # Static homepage
 
