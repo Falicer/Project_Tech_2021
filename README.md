@@ -18,7 +18,20 @@ This app is made for CMD Blok Tech.
 
 
 # Installation
-Still in the works
+```
+1. git clone https://github.com/Falicer/Project_Tech_2021.git
+
+2. cd Project_Tech_2021
+
+3. npm install or npm i
+```
+
+You'll need to setup a `.env` file with these values:
+
+```env
+still in progress
+```
+
 
 ## Packages
 Packages planned to be used for the project.
