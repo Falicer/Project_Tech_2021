@@ -29,7 +29,7 @@ This app is made for CMD Blok Tech.
 You'll need to setup a `.env` file with these values:
 
 ```env
-still in progress
+MONGO_CONN_STRING=mongodb+srv://Falicer:test@projecttech2021.ftuuw.mongodb.net/test
 ```
 
 

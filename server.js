@@ -1,15 +1,11 @@
-//require('dotenv').config()
+require('dotenv').config()
 const express = require('express')
 const app = express()
-const port  = process.env.PORT || 3000
+const PORT  = process.env.PORT || 3000
 const handlebars = require('express-handlebars')
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  res.json({message: 'Hello API!', developer: 'Raekwon'})
 })
 
 // Zet hbs als templating engine
@@ -28,12 +24,12 @@ app.listen(port, () => {
 
 
 // Maak een verbinding met mongodb via mongoose
-// const connectDBMongoose = require('./config/mongoose')
-// connectDBMongoose()
+const connectDBMongoose = require('./config/mongoose')
+connectDBMongoose()
 
 // const routes =  require('./router/router.js')
 // app.use('/', routes)
 
-// app.listen(PORT, () => {
-//   console.log(`Listening at http://localhost:${PORT}`)
-// })
+app.listen(PORT, () => {
+  console.log(`Listening at http://localhost:${PORT}`)
+})

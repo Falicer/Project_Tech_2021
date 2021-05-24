@@ -1,5 +1,5 @@
 {
-  "name": "Petscout",
+  "name": "petscout",
   "version": "0.2",
   "description": "Im just trying my best",
   "author": "Raekwon Gerold",
@@ -16,7 +16,6 @@
     "mongoose": "^5.12.10"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
     "eslint": "^7.27.0",
     "nodemon": "^2.0.7"
   }
