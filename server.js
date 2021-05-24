@@ -19,20 +19,22 @@ app.engine('hbs', handlebars({
 }))
 
 // Render page
-app.get('/', (req, res) =>{
-  return res.render('main', 
-  {
-    title: 'WTF IS DIIIIT',
-    layout: 'index'
-  })
-})
+const routes = require('./router/router.js')
+app.use('/', routes)
+// app.get('/', (req, res) =>{
+//   return res.render('main', 
+//   {
+//     title: 'WTF IS DIIIIT',
+//     layout: 'index'
+//   })
+// })
 
 // Maak een verbinding met mongodb via mongoose
 const connectDBMongoose = require('./config/mongoose')
 connectDBMongoose()
 
-// const routes =  require('./router/router.js')
-// app.use('/', routes)
+const routes =  require('./router/router.js')
+app.use('/', routes)
 
 app.listen(PORT, () => {
   console.log(`Hammering at http://localhost:${PORT}`)
