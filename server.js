@@ -4,24 +4,28 @@ const app = express()
 const PORT  = process.env.PORT || 3000
 const handlebars = require('express-handlebars')
 
-app.get('/', (req, res) => {
-  res.json({message: 'Hello API!', developer: 'Raekwon'})
-})
-
 // Zet hbs als templating engine
-// app.set('view engine',no 'hbs')
-// app.set('views', 'views')
-// app.use(express.static(__dirname + '/public'))
-// app.use(express.urlencoded({ extended: true}))
+app.set('view engine', 'hbs')
+app.set('views', 'views')
+app.use(express.static(__dirname + '/public'))
+app.use(express.urlencoded({ extended: true}))
 
 // Set custom templating engine
-// app.engine('hbs', handlebars({
-//     layoutsDir: `${__dirname}/views`,
-//     extname: 'hbs',
-//     defaultLayout: 'index',
-//     partialsDir: `${__dirname}/views/partials`
-// }))
+app.engine('hbs', handlebars({
+     layoutsDir: `${__dirname}/views/layout`,
+     extname: 'hbs',
+     defaultLayout: 'index',
+     partialsDir: `${__dirname}/views/partials`
+}))
 
+// Render page
+app.get('/', (req, res) =>{
+  return res.render('main', 
+  {
+    title: 'WTF IS DIIIIT',
+    layout: 'index'
+  })
+})
 
 // Maak een verbinding met mongodb via mongoose
 const connectDBMongoose = require('./config/mongoose')
