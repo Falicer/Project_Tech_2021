@@ -5,8 +5,8 @@ Project Tech Repository van 2021
 
 1. [Petscout matching app](#Petscout_matching_app)
 2. [Installation](#installation)
-3. [Packages](##Packages)
-4. [Extensions](##Extensions)
+3. [Packages](#Packages)
+4. [Extensions](#Extensions)
 5. [Static homepage](#Static_homepage)
 6. [License](#license)
 
