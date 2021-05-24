@@ -35,5 +35,5 @@ connectDBMongoose()
 // app.use('/', routes)
 
 app.listen(PORT, () => {
-  console.log(`Listening at http://localhost:${PORT}`)
+  console.log(`Hammering at http://localhost:${PORT}`)
 })
