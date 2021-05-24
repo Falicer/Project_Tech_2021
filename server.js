@@ -18,21 +18,12 @@ app.engine('hbs', handlebars({
      partialsDir: `${__dirname}/views/partials`
 }))
 
-// Render page
-const routes = require('./router/router.js')
-app.use('/', routes)
-// app.get('/', (req, res) =>{
-//   return res.render('main', 
-//   {
-//     title: 'WTF IS DIIIIT',
-//     layout: 'index'
-//   })
-// })
 
 // Maak een verbinding met mongodb via mongoose
 const connectDBMongoose = require('./config/mongoose')
 connectDBMongoose()
 
+// Render page
 const routes =  require('./router/router.js')
 app.use('/', routes)
 
