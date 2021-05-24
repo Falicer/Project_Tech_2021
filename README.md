@@ -3,7 +3,7 @@ Project Tech Repository van 2021
 
 ## Table of Contents 🗂
 
-1. [Petscout matching app](#Petscout_matching_app)
+1. [Petscout matching app](https://github.com/Falicer/Project_Tech_2021/blob/main/README.md#petscout-matching-app-in-the-works)
 2. [Installation](#installation)
 3. [Packages](#Packages)
 4. [Extensions](#Extensions)
