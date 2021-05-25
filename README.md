@@ -31,7 +31,7 @@ You'll need to setup a `.env` file with these values:
 ```env
 MONGO_CONN_STRING=mongodb+srv://Falicer:test@projecttech2021.ftuuw.mongodb.net/test
 ```
-
+The database might not work because you're not on a whitelisted IP, I'm looking for a localhost fix.
 
 ## Packages
 Packages planned to be used for the project.
